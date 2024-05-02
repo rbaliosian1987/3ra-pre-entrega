@@ -41,6 +41,8 @@ $paleta : (
     z-index: 1000;
 }
 
+
+
 @mixin construir-link($dimension){
     color: map-get($map: $paleta, $key: "principal");
     text-decoration: none;
@@ -94,6 +96,10 @@ main{
     box-shadow: map-get($map: $paleta, $key: "terceario") 5px 0px 0px 0px;
 }
 
+.equipo{
+    @extend .card;
+    height: 500px;
+}
 .big-icon{
     font-size: 34px;
     color: darken(map-get($map: $paleta, $key: "principal"), 0);

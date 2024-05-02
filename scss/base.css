@@ -18,7 +18,7 @@
   background-color: #FFFFFF;
 }
 
-.transicion-basica, .card, .apartado {
+.transicion-basica, .card, .equipo, .apartado {
   transition: all ease 0.3s;
 }
 
@@ -67,14 +67,18 @@ main {
   background-color: #E9ECEF;
 }
 
-.card {
+.card, .equipo {
   height: 150px;
   width: 300px;
   padding: 20px;
 }
 
-.card:hover {
+.card:hover, .equipo:hover {
   box-shadow: #08F 5px 0px 0px 0px;
+}
+
+.equipo {
+  height: 500px;
 }
 
 .big-icon {
