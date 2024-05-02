@@ -83,6 +83,10 @@ $paleta : (
 
 main{
     background-color: map-get($map: $paleta, $key: "light");
+
+    .container-sm{
+        padding: 20px;
+    }
 }
 
 .card{
@@ -125,4 +129,34 @@ article{
 
 footer{
     background-color: map-get($map: $paleta, $key: "light");
+}
+
+.fa-star{
+    color: map-get($map: $paleta, $key: "secundario");
+}
+
+.fa-star-half{
+    @extend .fa-star;
+}
+
+.calificacion{
+    i{
+        margin: 0px 5px;
+        font-size: 20px;
+        @extend .transicion-basica;
+        cursor: pointer;
+    }
+
+    i:hover{
+        transform: scale(1.2);
+    }
+
+}
+
+.dislike{
+    color: map-get($map: $paleta, $key: "principal");
+}
+
+.like{
+    color: map-get($map: $paleta, $key: "terceario");
 }

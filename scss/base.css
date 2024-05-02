@@ -18,7 +18,7 @@
   background-color: #FFFFFF;
 }
 
-.transicion-basica, .card, .equipo, .apartado {
+.transicion-basica, .calificacion i, .card, .equipo, .apartado {
   transition: all ease 0.3s;
 }
 
@@ -66,6 +66,9 @@
 main {
   background-color: #E9ECEF;
 }
+main .container-sm {
+  padding: 20px;
+}
 
 .card, .equipo {
   height: 150px;
@@ -104,4 +107,25 @@ article img {
 
 footer {
   background-color: #E9ECEF;
+}
+
+.fa-star, .fa-star-half {
+  color: #FED18C;
+}
+
+.calificacion i {
+  margin: 0px 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.calificacion i:hover {
+  transform: scale(1.2);
+}
+
+.dislike {
+  color: #FE654F;
+}
+
+.like {
+  color: #08F;
 }/*# sourceMappingURL=base.css.map */
