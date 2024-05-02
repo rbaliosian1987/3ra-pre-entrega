@@ -1,11 +1,20 @@
 $paleta : (
     "principal" : #FE654F,
     "secundario" : #FED18C,
-    "fondo" : #FFFFFF
+    "terceario" : #08F,
+    "fondo" : #FFFFFF,
+    "light" : #E9ECEF
 );
 
 .centrado-flex{
     display: flex;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+    @media (min-width: 1200px) {
+        flex-direction: row;
+    }
+    
     justify-content: center;
     align-items: center;
 }
@@ -25,6 +34,11 @@ $paleta : (
 
 .text-final{
     text-align: end;
+}
+
+.fijado{
+    position: fixed;
+    z-index: 1000;
 }
 
 @mixin construir-link($dimension){
@@ -47,10 +61,62 @@ $paleta : (
 }
 
 .apartado:hover{
-    @include colorear(map-get($map: $paleta, $key: "principal"));
+    @include colorear(map-get($map: $paleta, $key: "terceario"));
     
 }
 
 .apartado-alt:hover{
     @include colorear(map-get($map: $paleta, $key: "secundario"));
+}
+
+.sombra-color{
+    box-shadow: map-get($map: $paleta, $key: "principal") -5px 0px 0px 0px;
+}
+
+.cards{
+    @extend .centrado-flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+main{
+    background-color: map-get($map: $paleta, $key: "light");
+}
+
+.card{
+    height: 150px;
+    width: 300px;
+    padding: 20px;
+    @extend .transicion-basica;
+}
+
+.card:hover{
+    box-shadow: map-get($map: $paleta, $key: "terceario") 5px 0px 0px 0px;
+}
+
+.big-icon{
+    font-size: 34px;
+    color: darken(map-get($map: $paleta, $key: "principal"), 0);
+}
+
+.text-color{
+    color: map-get($map: $paleta, $key: "terceario");
+}
+
+article{
+    p {
+        text-align: start;
+    }
+
+    img{
+        max-width: 80%;
+        max-height: 80%;
+    }
+    
+    padding: 20px;
+    text-align: center;
+}
+
+footer{
+    background-color: map-get($map: $paleta, $key: "light");
 }

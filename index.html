@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Esta es la descripcion de mi sitio web">
     <meta name="robots" content="index, follow">
+    <meta name="keywords" content="celulares, computadoras, celulares a bajo precio y buena calidad">
 
     <link rel="stylesheet" href="scss/base.css">
     <script src="https://kit.fontawesome.com/c31f955b45.js" crossorigin="anonymous"></script>
@@ -18,8 +19,11 @@
 </head>
 
 <body>
+
+    <!-- El cabecero de mi página, en donde colocaré mi barra de navegación -->
     <header>
-        <nav class="navbar navbar-expand bg-principal shadow-sm fijado">
+        <!-- Esta es mi barra de navegación, donde tengo mis accesos a otros apartados -->
+        <nav class="navbar navbar-expand bg-principal shadow-sm rounded">
             <div class="container-sm">
                 <div class="container-sm">
                     <a href="index.html" class="apartado">Inicio</a>
@@ -28,19 +32,107 @@
                 <div class="container-sm text-final">
                     <a href="productos.html" class="apartado apartado-alt">Productos</a>
                     <a href="comentarios.html" class="apartado apartado-alt">Comentarios</a>
-                    <a href="#nosotros" class="apartado activo">Sobre nosotros</a>
+                    <a href="#nosotros" class="apartado apartado-alt">Sobre nosotros</a>
                 </div>
             </div>
 
         </nav>
     </header>
 
+    <!-- Este es el main de mi página, o sería dicho de otra forma el cuerpo, la información principal -->
     <main>
+        <h1 class="display-5 text-center">Dashboard</h1>
 
+        <h2 class="display-6">Tarjetas de información</h2>
+            <div class="cards">
+                <div class="card sombra-color bg-principal">
+                    <p class="text-color">Ganancias (anuales)</p>
+                    <h3> <i class="fa-solid fa-dollar big-icon"></i> 215'000.000</h3>
+                </div>
+                <div class="card sombra-color bg-principal">
+                    <p class="text-color">Modelos de disposivos</p>
+                    <h3> <i class="fa-solid fa-desktop big-icon"></i> 530</h3>
+                </div>
+                <div class="card sombra-color bg-principal">
+                    <p class="text-color">Compras hoy</p>
+                    <h3> <i class="fa-solid fa-cart-shopping big-icon"></i> 193</h3>
+                </div>
+                <div class="card sombra-color bg-principal">
+                    <p class="text-color">Tiendas registradas</p>
+                    <h3> <i class="fa-solid fa-shop big-icon"></i> 58</h3>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Este es mi articulo en el que hablo sobre la empresa que ofrece los dispositivos -->
+            <article class="container-sm shadow-sm rounded bg-principal" id="nosotros">
+
+                <header>
+                    <h2 class="display-6 text-center">Sobre Nosotros</h2>
+                </header>
+
+                <figure>
+                    <img src="src/nosotros.jpg" alt="Imagen de empresa">
+                </figure>
+                
+
+                <p>
+
+                    <b></b> es una empresa especializada en la venta de tecnología de última generación. Nos apasiona
+                    ofrecer a nuestros clientes los mejores productos y servicios para que puedan aprovechar al máximo
+                    las ventajas que la tecnología tiene para ofrecer.
+
+                    <b>Nuestra historia</b>
+
+                    [Nombre de tu empresa] fue fundada en [año] con el objetivo de brindar a nuestros clientes una
+                    experiencia de compra única y satisfactoria. Desde entonces, hemos crecido y nos hemos convertido en
+                    una empresa líder en el sector, con una amplia presencia en [país o región].
+
+                    <b>Nuestro compromiso</b>
+
+                    En [Nombre de tu empresa] estamos comprometidos con ofrecer a nuestros clientes:
+
+                    <br>
+                    <b>Productos de la más alta calidad</b> Seleccionamos cuidadosamente los productos que ofrecemos
+                    para asegurarnos de que cumplen con los más altos estándares de calidad.
+                    <br>
+                    <b>Precios competitivos</b> Ofrecemos precios competitivos en todos nuestros productos.
+                    <br>
+                    <b>Un servicio al cliente excepcional</b> Nuestro equipo de atención al cliente está altamente
+                    capacitado para brindarle el mejor servicio posible.
+                    <br>
+                    <b>Asesoramiento experto</b> Nuestro equipo de expertos puede asesorarlo para que pueda elegir el
+                    producto que mejor se adapte a sus necesidades.
+
+                    <br><br>
+                    
+
+                    <b>Nuestra visión</b>
+
+                    Nuestra visión es ser la empresa líder en venta de tecnología de [país o región], reconocida por la
+                    calidad de nuestros productos, la excelencia de nuestro servicio al cliente y nuestro compromiso con
+                    la innovación.
+
+                </p>
+
+            </article>
     </main>
 
-    <footer>
+    <!-- En este footer o pie de página colocaré la información de contacto de la empresa -->
+    <footer class="text-center">
+        <h2>Contacto</h2>
 
+        <div class="container-sm bg-principal">
+            <a href="" class="apartado"><i class="fa-brands fa-facebook"></i> TecnoGit</a>
+            <a href="" class="apartado"><i class="fa-brands fa-twitter"></i> @TecnoGit</a>
+            <a href="" class="apartado"><i class="fa-brands fa-instagram"></i> @TecnoGit</a>
+            <a href="" class="apartado"><i class="fa-brands fa-youtube"></i> TecnoGit</a>
+            <a href="" class="apartado"><i class="fa-brands fa-google"></i> tecnogit@gmail.com</a>
+        </div>
+        
+        <p>Creado por mí</p>
+        <p>Copyright ©rbaliosian1987</p>
     </footer>
 </body>
 
