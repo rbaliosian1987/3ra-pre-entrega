@@ -1,0 +1,40 @@
+.centrado-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-principal {
+  background-color: #FFFFFF;
+}
+
+.transicion-basica, .apartado {
+  transition: all ease 0.3s;
+}
+
+.center {
+  text-align: center;
+}
+
+.text-final {
+  text-align: end;
+}
+
+.apartado {
+  color: #FE654F;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+
+.apartado:hover {
+  color: #FFFFFF;
+  background-color: #FE654F;
+}
+
+.apartado-alt:hover {
+  color: #FFFFFF;
+  background-color: #FED18C;
+}/*# sourceMappingURL=base.css.map */

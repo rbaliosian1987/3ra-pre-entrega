@@ -1,0 +1,56 @@
+$paleta : (
+    "principal" : #FE654F,
+    "secundario" : #FED18C,
+    "fondo" : #FFFFFF
+);
+
+.centrado-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-principal{
+    background-color: map-get($map: $paleta, $key: "fondo");
+}
+
+
+.transicion-basica{
+    transition: all ease .3s;
+}
+
+.center{
+    text-align: center;
+}
+
+.text-final{
+    text-align: end;
+}
+
+@mixin construir-link($dimension){
+    color: map-get($map: $paleta, $key: "principal");
+    text-decoration: none;
+    font-weight: 600;
+    font-size: $dimension;
+    padding: 0px 10px;
+}
+
+@mixin colorear($fondo){
+    color: map-get($map: $paleta, $key: "fondo");
+    background-color: $fondo;
+}
+
+.apartado{
+    @extend .transicion-basica;
+    @include construir-link(18px);
+    border-radius: 5px;
+}
+
+.apartado:hover{
+    @include colorear(map-get($map: $paleta, $key: "principal"));
+    
+}
+
+.apartado-alt:hover{
+    @include colorear(map-get($map: $paleta, $key: "secundario"));
+}
